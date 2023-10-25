@@ -16,5 +16,7 @@ public class Routes {
 	public static String delete_user=base_url+"/user/{username}";
 	public static String get_user=base_url+"/user/{username}";
 	public static String update_user=base_url+"/user/{username}";
+	
+	public static String get_order=base_url+"/store/order/{orderId}";
 
 }
