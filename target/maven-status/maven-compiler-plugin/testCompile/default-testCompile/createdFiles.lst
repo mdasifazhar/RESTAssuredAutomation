@@ -1,0 +1,16 @@
+tests\TestExample.class
+api\utilities\ExtentReportManager.class
+api\utilities\DataProviders.class
+api\endpoints\OrderEndPoints.class
+api\endpoints\UserEndPoints.class
+api\test\DDUserTest.class
+demo\AutomationTest.class
+tests\Test.class
+api\payload\User.class
+api\utilities\XLUtilities.class
+tests\GetAndPostExamples.class
+api\endpoints\Routes.class
+api\endpoints\UserEndPoints2.class
+api\test\UserTest2.class
+api\test\UserTest.class
+tests\PutPatchDeleteExample.class

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>PetStoreUser</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Oct 22 00:03:05 CDT 2023</td>
+<td>Started on:</td><td>Mon May 13 13:27:35 CDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4304 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1065 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,25 +76,217 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='api.test.UserTest.testDeleteUser()'><b>testDeleteUser</b><br>Test class: api.test.UserTest</td>
-<td></td>
+<td title='api.test.UserTest2.testGetUserByName()'><b>testGetUserByName</b><br>Test class: api.test.UserTest2</td>
+<td><div><pre>java.util.MissingResourceException: Can&apos;t find bundle for base name route, locale en_US
+	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2055)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1689)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1593)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1556)
+	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:857)
+	at api.endpoints.UserEndPoints2.getUrl(UserEndPoints2.java:17)
+	at api.endpoints.UserEndPoints2.getUser(UserEndPoints2.java:29)
+	at api.test.UserTest2.testGetUserByName(UserTest2.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace495885630", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace495885630'><pre>java.util.MissingResourceException: Can&apos;t find bundle for base name route, locale en_US
+	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2055)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1689)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1593)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1556)
+	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:857)
+	at api.endpoints.UserEndPoints2.getUrl(UserEndPoints2.java:17)
+	at api.endpoints.UserEndPoints2.getUser(UserEndPoints2.java:29)
+	at api.test.UserTest2.testGetUserByName(UserTest2.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
 <td>0</td>
-<td>api.test.UserTest@18df8434</td></tr>
+<td>api.test.UserTest2@1c5920df</td></tr>
 <tr>
-<td title='api.test.UserTest.testCreateUser()'><b>testCreateUser</b><br>Test class: api.test.UserTest</td>
-<td></td>
-<td>2</td>
-<td>api.test.UserTest@18df8434</td></tr>
-<tr>
-<td title='api.test.UserTest.testGetUserByName()'><b>testGetUserByName</b><br>Test class: api.test.UserTest</td>
-<td></td>
+<td title='api.test.UserTest2.testDeleteUser()'><b>testDeleteUser</b><br>Test class: api.test.UserTest2</td>
+<td><div><pre>java.util.MissingResourceException: Can&apos;t find bundle for base name route, locale en_US
+	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2055)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1689)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1593)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1556)
+	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:857)
+	at api.endpoints.UserEndPoints2.getUrl(UserEndPoints2.java:17)
+	at api.endpoints.UserEndPoints2.deleteUser(UserEndPoints2.java:43)
+	at api.test.UserTest2.testDeleteUser(UserTest2.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1641214567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1641214567'><pre>java.util.MissingResourceException: Can&apos;t find bundle for base name route, locale en_US
+	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2055)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1689)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1593)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1556)
+	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:857)
+	at api.endpoints.UserEndPoints2.getUrl(UserEndPoints2.java:17)
+	at api.endpoints.UserEndPoints2.deleteUser(UserEndPoints2.java:43)
+	at api.test.UserTest2.testDeleteUser(UserTest2.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
 <td>0</td>
-<td>api.test.UserTest@18df8434</td></tr>
+<td>api.test.UserTest2@1c5920df</td></tr>
 <tr>
-<td title='api.test.UserTest.testUpdateUser()'><b>testUpdateUser</b><br>Test class: api.test.UserTest</td>
-<td></td>
+<td title='api.test.UserTest2.testUpdateUser()'><b>testUpdateUser</b><br>Test class: api.test.UserTest2</td>
+<td><div><pre>java.util.MissingResourceException: Can&apos;t find bundle for base name route, locale en_US
+	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2055)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1689)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1593)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1556)
+	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:857)
+	at api.endpoints.UserEndPoints2.getUrl(UserEndPoints2.java:17)
+	at api.endpoints.UserEndPoints2.upateUser(UserEndPoints2.java:36)
+	at api.test.UserTest2.testUpdateUser(UserTest2.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1413886848", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1413886848'><pre>java.util.MissingResourceException: Can&apos;t find bundle for base name route, locale en_US
+	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2055)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1689)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1593)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1556)
+	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:857)
+	at api.endpoints.UserEndPoints2.getUrl(UserEndPoints2.java:17)
+	at api.endpoints.UserEndPoints2.upateUser(UserEndPoints2.java:36)
+	at api.test.UserTest2.testUpdateUser(UserTest2.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
 <td>0</td>
-<td>api.test.UserTest@18df8434</td></tr>
+<td>api.test.UserTest2@1c5920df</td></tr>
+<tr>
+<td title='api.test.UserTest2.testCreateUser()'><b>testCreateUser</b><br>Test class: api.test.UserTest2</td>
+<td><div><pre>java.util.MissingResourceException: Can&apos;t find bundle for base name route, locale en_US
+	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2055)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1689)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1593)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1556)
+	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:857)
+	at api.endpoints.UserEndPoints2.getUrl(UserEndPoints2.java:17)
+	at api.endpoints.UserEndPoints2.createUser(UserEndPoints2.java:22)
+	at api.test.UserTest2.testCreateUser(UserTest2.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1337659716", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1337659716'><pre>java.util.MissingResourceException: Can&apos;t find bundle for base name route, locale en_US
+	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2055)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1689)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1593)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1556)
+	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:857)
+	at api.endpoints.UserEndPoints2.getUrl(UserEndPoints2.java:17)
+	at api.endpoints.UserEndPoints2.createUser(UserEndPoints2.java:22)
+	at api.test.UserTest2.testCreateUser(UserTest2.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>api.test.UserTest2@1c5920df</td></tr>
 </table><p>
 </body>
 </html>

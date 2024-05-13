@@ -8,14 +8,36 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">PetStoreSuite</th></tr>
-<tr><td><a href="#t0">PetStoreUser</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4,304</td><td></td><td></td></tr>
+<tr><th colspan="8">TestAutomationRegression</th></tr>
+<tr><td><a href="#t0">ChromeTest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">32,345</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">FirefoxTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">83,587</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">115,932</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">PetStoreSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">PetStoreUser &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">api.test.UserTest</td><td><a href="#m0">testCreateUser</a></td><td rowspan="1">1697950985680</td><td rowspan="1">2768</td></tr><tr class="passedeven"><td><a href="#m1">testDeleteUser</a></td><td rowspan="1">1697950989406</td><td rowspan="1">247</td></tr><tr class="passedeven"><td><a href="#m2">testGetUserByName</a></td><td rowspan="1">1697950988455</td><td rowspan="1">343</td></tr><tr class="passedeven"><td><a href="#m3">testUpdateUser</a></td><td rowspan="1">1697950988802</td><td rowspan="1">599</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TestAutomationRegression</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ChromeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">demo.AutomationTest</td><td><a href="#m0">getFreshworkFooterInfo</a></td><td rowspan="1">1715635973326</td><td rowspan="1">2561</td></tr><tr class="passedeven"><td><a href="#m1">getFreshworkTitleInfo</a></td><td rowspan="1">1715635993474</td><td rowspan="1">431</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">FirefoxTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">demo.AutomationTest</td><td><a href="#m2">getFreshworkFooterInfo</a></td><td rowspan="1">1715636003759</td><td rowspan="1">339</td></tr><tr><th colspan="4">FirefoxTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">demo.AutomationTest</td><td><a href="#m3">getFreshworkTitleInfo</a></td><td rowspan="1">1715636076538</td><td rowspan="1">195</td></tr></tbody>
 </table>
-<h2>PetStoreUser</h2><h3 id="m0">api.test.UserTest#testCreateUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">api.test.UserTest#testDeleteUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">api.test.UserTest#testGetUserByName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">api.test.UserTest#testUpdateUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ChromeTest</h2><h3 id="m0">demo.AutomationTest#getFreshworkFooterInfo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">demo.AutomationTest#getFreshworkTitleInfo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>FirefoxTest</h2><h3 id="m2">demo.AutomationTest#getFreshworkFooterInfo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: The element with the reference 92a3cd94-5727-40fb-a4f6-61299a220761 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.18&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [ec4c83ca-4e42-415b-91a4-794ad230ebb4, getElementText {id=92a3cd94-5727-40fb-a4f6-61299a220761}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 126.0, moz:accessibilityChecks: false, moz:buildID: 20240503091735, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 5.15.0-1004-aws, moz:processID: 272, moz:profile: /tmp/rust_mozprofileugoYVS, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.3:4444/sessio..., se:noVncPort: 7900, se:vnc: ws://172.18.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
+Element: [[RemoteWebDriver: firefox on linux (ec4c83ca-4e42-415b-91a4-794ad230ebb4)] -&gt; xpath: //ul/li[contains(@class,&apos;sc-6293d692-0 eNMhGa&apos;)]]
+Session ID: ec4c83ca-4e42-415b-91a4-794ad230ebb4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
+	at demo.AutomationTest.getFreshworkFooterInfo(AutomationTest.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">demo.AutomationTest#getFreshworkTitleInfo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -1,33 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-22T00:03:05 CDT" name="PetStoreSuite" finished-at="2023-10-22T00:03:09 CDT" duration-ms="4304">
+  <suite started-at="2024-05-13T16:32:41 CDT" name="TestAutomationRegression" finished-at="2024-05-13T16:34:37 CDT" duration-ms="115978">
     <groups>
     </groups>
-    <test started-at="2023-10-22T00:03:05 CDT" name="PetStoreUser" finished-at="2023-10-22T00:03:09 CDT" duration-ms="4304">
-      <class name="api.test.UserTest">
-        <test-method is-config="true" signature="setupData()[pri:0, instance:api.test.UserTest@18df8434]" started-at="2023-10-22T00:03:05 CDT" name="setupData" finished-at="2023-10-22T00:03:05 CDT" duration-ms="267" status="PASS">
+    <test started-at="2024-05-13T16:32:41 CDT" name="ChromeTest" finished-at="2024-05-13T16:33:14 CDT" duration-ms="32345">
+      <class name="demo.AutomationTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:demo.AutomationTest@79e4c792]" started-at="2024-05-13T16:32:41 CDT" name="setup" finished-at="2024-05-13T16:32:53 CDT" duration-ms="11517" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupData -->
-        <test-method signature="testCreateUser()[pri:1, instance:api.test.UserTest@18df8434]" started-at="2023-10-22T00:03:05 CDT" name="testCreateUser" finished-at="2023-10-22T00:03:08 CDT" duration-ms="2768" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="getFreshworkFooterInfo()[pri:0, instance:demo.AutomationTest@79e4c792]" started-at="2024-05-13T16:32:53 CDT" name="getFreshworkFooterInfo" finished-at="2024-05-13T16:32:55 CDT" duration-ms="2561" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCreateUser -->
-        <test-method signature="testGetUserByName()[pri:2, instance:api.test.UserTest@18df8434]" started-at="2023-10-22T00:03:08 CDT" name="testGetUserByName" finished-at="2023-10-22T00:03:08 CDT" duration-ms="343" status="PASS">
+        </test-method> <!-- getFreshworkFooterInfo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo.AutomationTest@79e4c792]" started-at="2024-05-13T16:32:55 CDT" name="tearDown" finished-at="2024-05-13T16:33:03 CDT" duration-ms="7930" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetUserByName -->
-        <test-method signature="testUpdateUser()[pri:3, instance:api.test.UserTest@18df8434]" started-at="2023-10-22T00:03:08 CDT" name="testUpdateUser" finished-at="2023-10-22T00:03:09 CDT" duration-ms="599" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:demo.AutomationTest@79e4c792]" started-at="2024-05-13T16:33:03 CDT" name="setup" finished-at="2024-05-13T16:33:13 CDT" duration-ms="9652" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testUpdateUser -->
-        <test-method signature="testDeleteUser()[pri:4, instance:api.test.UserTest@18df8434]" started-at="2023-10-22T00:03:09 CDT" name="testDeleteUser" finished-at="2023-10-22T00:03:09 CDT" duration-ms="247" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="getFreshworkTitleInfo()[pri:0, instance:demo.AutomationTest@79e4c792]" started-at="2024-05-13T16:33:13 CDT" name="getFreshworkTitleInfo" finished-at="2024-05-13T16:33:13 CDT" duration-ms="431" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDeleteUser -->
-      </class> <!-- api.test.UserTest -->
-    </test> <!-- PetStoreUser -->
-  </suite> <!-- PetStoreSuite -->
+        </test-method> <!-- getFreshworkTitleInfo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo.AutomationTest@79e4c792]" started-at="2024-05-13T16:33:13 CDT" name="tearDown" finished-at="2024-05-13T16:33:14 CDT" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- demo.AutomationTest -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2024-05-13T16:33:14 CDT" name="FirefoxTest" finished-at="2024-05-13T16:34:37 CDT" duration-ms="83587">
+      <class name="demo.AutomationTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:demo.AutomationTest@6e535154]" started-at="2024-05-13T16:33:14 CDT" name="setup" finished-at="2024-05-13T16:33:23 CDT" duration-ms="9595" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getFreshworkFooterInfo()[pri:0, instance:demo.AutomationTest@6e535154]" started-at="2024-05-13T16:33:23 CDT" name="getFreshworkFooterInfo" finished-at="2024-05-13T16:33:24 CDT" duration-ms="339" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[The element with the reference 92a3cd94-5727-40fb-a4f6-61299a220761 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [ec4c83ca-4e42-415b-91a4-794ad230ebb4, getElementText {id=92a3cd94-5727-40fb-a4f6-61299a220761}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 126.0, moz:accessibilityChecks: false, moz:buildID: 20240503091735, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 5.15.0-1004-aws, moz:processID: 272, moz:profile: /tmp/rust_mozprofileugoYVS, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.3:4444/sessio..., se:noVncPort: 7900, se:vnc: ws://172.18.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
+Element: [[RemoteWebDriver: firefox on linux (ec4c83ca-4e42-415b-91a4-794ad230ebb4)] -> xpath: //ul/li[contains(@class,'sc-6293d692-0 eNMhGa')]]
+Session ID: ec4c83ca-4e42-415b-91a4-794ad230ebb4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element with the reference 92a3cd94-5727-40fb-a4f6-61299a220761 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [ec4c83ca-4e42-415b-91a4-794ad230ebb4, getElementText {id=92a3cd94-5727-40fb-a4f6-61299a220761}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 126.0, moz:accessibilityChecks: false, moz:buildID: 20240503091735, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 5.15.0-1004-aws, moz:processID: 272, moz:profile: /tmp/rust_mozprofileugoYVS, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.18.0.3:4444/sessio..., se:noVncPort: 7900, se:vnc: ws://172.18.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.18.0.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
+Element: [[RemoteWebDriver: firefox on linux (ec4c83ca-4e42-415b-91a4-794ad230ebb4)] -> xpath: //ul/li[contains(@class,'sc-6293d692-0 eNMhGa')]]
+Session ID: ec4c83ca-4e42-415b-91a4-794ad230ebb4
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:192)
+at demo.AutomationTest.getFreshworkFooterInfo(AutomationTest.java:64)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getFreshworkFooterInfo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo.AutomationTest@6e535154]" started-at="2024-05-13T16:33:24 CDT" name="tearDown" finished-at="2024-05-13T16:33:25 CDT" duration-ms="1207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:demo.AutomationTest@6e535154]" started-at="2024-05-13T16:33:25 CDT" name="setup" finished-at="2024-05-13T16:34:36 CDT" duration-ms="71223" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getFreshworkTitleInfo()[pri:0, instance:demo.AutomationTest@6e535154]" started-at="2024-05-13T16:34:36 CDT" name="getFreshworkTitleInfo" finished-at="2024-05-13T16:34:36 CDT" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getFreshworkTitleInfo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo.AutomationTest@6e535154]" started-at="2024-05-13T16:34:36 CDT" name="tearDown" finished-at="2024-05-13T16:34:37 CDT" duration-ms="1014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- demo.AutomationTest -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- TestAutomationRegression -->
 </testng-results>

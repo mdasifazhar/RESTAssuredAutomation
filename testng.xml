@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="PetStoreSuite">
-	<listners>
-		<listner class-name="api.utilities.ExtentReportManager"/>
-	</listners>
-	<test name="PetStoreUser">
+<!-- <suite name="PetStoreSuite"> <listners> <listner class-name="api.utilities.ExtentReportManager"/> 
+	</listners> <test name="PetStoreUser"> <classes> <class name="api.test.DDUserTest" 
+	/> <class name="api.test.UserTest" /> <class name="api.test.UserTest2" /> 
+	</classes> </test> </suite> -->
+
+<suite name="TestAutomationRegression" verbose="1"
+	theread-count="2" paralle="tests">
+	<test name="ChromeTest">
+		<parameter name="browser" value="chrome" />
 		<classes>
-			<!-- <class name="api.test.DDUserTest" /> -->
-			<!--  class name="api.test.UserTest" /-->
-			<class name="api.test.UserTest2" />
+			<class name="demo.AutomationTest" />
 		</classes>
-	</test> <!-- PetStoreUser -->
-</suite> <!-- PetStoreSuite -->
+	</test>
+	
+	
+		<test name="FirefoxTest">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="demo.AutomationTest" />
+		</classes>
+	</test>
+</suite>

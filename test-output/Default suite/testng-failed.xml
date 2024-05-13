@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.test.DDUserTest">
+      <class name="SPTesting">
         <methods>
-          <include name="ddCreateUser"/>
-          <include name="ddDeleteUser"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="validateStoreProcedure"/>
         </methods>
-      </class> <!-- api.test.DDUserTest -->
+      </class> <!-- SPTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
