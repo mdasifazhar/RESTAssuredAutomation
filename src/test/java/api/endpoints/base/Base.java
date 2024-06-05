@@ -1,4 +1,4 @@
-package api.endpoints;
+package api.endpoints.base;
 
 /*
  POST https://petstore.swagger.io/v2/user/createWithArray
@@ -10,7 +10,7 @@ package api.endpoints;
  GET https://petstore.swagger.io/v2/user/logout
  POST https://petstore.swagger.io/v2/user
  * */
-public class Routes {
+public class Base {
 	public static String base_url = "https://petstore.swagger.io/v2";
 	public static String create_user=base_url+"/user";
 	public static String delete_user=base_url+"/user/{username}";

@@ -1,7 +1,7 @@
 package tests;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Test {
@@ -9,6 +9,12 @@ public class Test {
 	private static final Scanner scanner = new Scanner(System.in);
 
 	public static void main(String[] args) throws Exception {
+		
+		SimpleDateFormat sdf= new SimpleDateFormat("dd-MMM-yyyy HH:mm:ss");
+		long milisec=1716570765000l;
+		Date d = new Date(milisec);
+		System.out.println(sdf.format(d));
+		
 		Scanner in = new Scanner(System.in);
 
 		int t = in.nextInt();
